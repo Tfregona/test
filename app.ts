@@ -24,7 +24,7 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.get('/', (req: Request, res: Response) => {
-  return res.status(200).json({success:true,message:`Api is running for ${config.env}`})
+  return res.status(200).json({success:true,message:`Api  is running for ${config.env}`})
 })
 
 app.use((req: Request, res: Response) => {
